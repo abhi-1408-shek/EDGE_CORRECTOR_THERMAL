@@ -3,7 +3,7 @@ TEAM TASK DISTRIBUTION: "SOFTWARE EDGE" HYBRID IMAGE ENHANCEMENT PIPELINE
 This document outlines the division of labor for a 5-member team working on the software-based real-time hybrid image enhancement project. The pipeline has been modularized so that each member can work on a separate phase concurrently.
 
 ------------------------------------------------------------------------
-MEMBER 1: Deterministic Pipeline Specialist (C++ / OpenCV)
+1: Deterministic Pipeline Specialist (C++ / OpenCV)
 ------------------------------------------------------------------------
 * Responsibilities: Stage 1 (Deterministic Pre-Processing) and Stage 2 (Edge Map Extraction).
 * Core Tasks:
@@ -13,7 +13,7 @@ MEMBER 1: Deterministic Pipeline Specialist (C++ / OpenCV)
 * Key Deliverable: A C++ module that takes a raw noisy frame and outputs a deterministically cleaned frame and an edge mask.
 
 ------------------------------------------------------------------------
-MEMBER 2: AI Model Architect & Training (Python / PyTorch)
+2: AI Model Architect & Training (Python / PyTorch)
 ------------------------------------------------------------------------
 * Responsibilities: Stage 3 (AI-Based Correction) - Offline Phase.
 * Core Tasks:
@@ -24,7 +24,7 @@ MEMBER 2: AI Model Architect & Training (Python / PyTorch)
 * Key Deliverable: A highly accurate, compressed ONNX model ready for hardware compilation.
 
 ------------------------------------------------------------------------
-MEMBER 3: Edge AI Deployment Engineer (C++ / TensorRT)
+3: Edge AI Deployment Engineer (C++ / TensorRT)
 ------------------------------------------------------------------------
 * Responsibilities: Stage 3 (AI-Based Correction) - Runtime Phase.
 * Core Tasks:
@@ -34,7 +34,7 @@ MEMBER 3: Edge AI Deployment Engineer (C++ / TensorRT)
 * Key Deliverable: A compiled TensorRT engine and a C++ inference class that outputs AI-corrected frames.
 
 ------------------------------------------------------------------------
-MEMBER 4: High-Performance GPU Programmer (CUDA C++)
+4: High-Performance GPU Programmer (CUDA C++)
 ------------------------------------------------------------------------
 * Responsibilities: Stage 4 (Confidence-Weighted Fusion).
 * Core Tasks:
@@ -44,7 +44,7 @@ MEMBER 4: High-Performance GPU Programmer (CUDA C++)
 * Key Deliverable: A fully optimized `.cu` file exposing a C++ function for the fusion stage.
 
 ------------------------------------------------------------------------
-MEMBER 5: Systems Architect & Orchestrator (Modern C++ Multithreading)
+5: Systems Architect & Orchestrator (Modern C++ Multithreading)
 ------------------------------------------------------------------------
 * Responsibilities: Overall Pipeline Integration, Stage 5 (Validation), and Benchmarking.
 * Core Tasks:
